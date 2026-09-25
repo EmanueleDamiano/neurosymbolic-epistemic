@@ -1,0 +1,490 @@
+[
+  {
+    "question": "Is Person the domain of undergraduateDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "undergraduateDegreeFrom"
+  },
+  {
+    "question": "Is Work the domain of undergraduateDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "undergraduateDegreeFrom"
+  },
+  {
+    "question": "Is Professor the domain of tenured?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "tenured"
+  },
+  {
+    "question": "Is ResearchGroup the domain of tenured?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "tenured"
+  },
+  {
+    "question": "Is TeachingAssistant the domain of teachingAssistantOf?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "teachingAssistantOf"
+  },
+  {
+    "question": "Is Course the domain of teachingAssistantOf?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "teachingAssistantOf"
+  },
+  {
+    "question": "Is Faculty the domain of teacherOf?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "teacherOf"
+  },
+  {
+    "question": "Is GraduateStudent the domain of teacherOf?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "teacherOf"
+  },
+  {
+    "question": "Is Organization the domain of subOrganizationOf?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "subOrganizationOf"
+  },
+  {
+    "question": "Is ConferencePaper the domain of subOrganizationOf?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "subOrganizationOf"
+  },
+  {
+    "question": "Is Software the domain of softwareVersion?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "softwareVersion"
+  },
+  {
+    "question": "Is FullProfessor the domain of softwareVersion?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "softwareVersion"
+  },
+  {
+    "question": "Is Software the domain of softwareDocumentation?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "softwareDocumentation"
+  },
+  {
+    "question": "Is TeachingAssistant the domain of softwareDocumentation?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "softwareDocumentation"
+  },
+  {
+    "question": "Is ResearchGroup the domain of researchProject?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "researchProject"
+  },
+  {
+    "question": "Is SystemsStaff the domain of researchProject?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "researchProject"
+  },
+  {
+    "question": "Is Publication the domain of publicationResearch?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "publicationResearch"
+  },
+  {
+    "question": "Is GraduateCourse the domain of publicationResearch?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "publicationResearch"
+  },
+  {
+    "question": "Is Publication the domain of publicationDate?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "publicationDate"
+  },
+  {
+    "question": "Is UndergraduateStudent the domain of publicationDate?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "publicationDate"
+  },
+  {
+    "question": "Is Publication the domain of publicationAuthor?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "publicationAuthor"
+  },
+  {
+    "question": "Is Research the domain of publicationAuthor?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "publicationAuthor"
+  },
+  {
+    "question": "Is Organization the domain of orgPublication?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "orgPublication"
+  },
+  {
+    "question": "Is UndergraduateStudent the domain of orgPublication?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "orgPublication"
+  },
+  {
+    "question": "Is Organization the domain of member?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "member"
+  },
+  {
+    "question": "Is Program the domain of member?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "member"
+  },
+  {
+    "question": "Is Person the domain of mastersDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "mastersDegreeFrom"
+  },
+  {
+    "question": "Is PostDoc the domain of mastersDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "mastersDegreeFrom"
+  },
+  {
+    "question": "Is Schedule the domain of listedCourse?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "listedCourse"
+  },
+  {
+    "question": "Is Faculty the domain of listedCourse?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "listedCourse"
+  },
+  {
+    "question": "Is University the domain of hasAlumnus?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "hasAlumnus"
+  },
+  {
+    "question": "Is ConferencePaper the domain of hasAlumnus?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "hasAlumnus"
+  },
+  {
+    "question": "Is Person the domain of doctoralDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "doctoralDegreeFrom"
+  },
+  {
+    "question": "Is Specification the domain of doctoralDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "doctoralDegreeFrom"
+  },
+  {
+    "question": "Is Person the domain of degreeFrom?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "degreeFrom"
+  },
+  {
+    "question": "Is Software the domain of degreeFrom?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "degreeFrom"
+  },
+  {
+    "question": "Is Organization the domain of affiliatedOrganizationOf?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "affiliatedOrganizationOf"
+  },
+  {
+    "question": "Is Chair the domain of affiliatedOrganizationOf?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "affiliatedOrganizationOf"
+  },
+  {
+    "question": "Is Organization the domain of affiliateOf?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "affiliateOf"
+  },
+  {
+    "question": "Is AssociateProfessor the domain of affiliateOf?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "affiliateOf"
+  },
+  {
+    "question": "Is Person the domain of advisor?",
+    "answer": true,
+    "reasoning_type": "domain_true",
+    "property": "advisor"
+  },
+  {
+    "question": "Is College the domain of advisor?",
+    "answer": false,
+    "reasoning_type": "domain_false",
+    "property": "advisor"
+  },
+  {
+    "question": "Is University the range of undergraduateDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "undergraduateDegreeFrom"
+  },
+  {
+    "question": "Is Course the range of undergraduateDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "undergraduateDegreeFrom"
+  },
+  {
+    "question": "Is Course the range of teachingAssistantOf?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "teachingAssistantOf"
+  },
+  {
+    "question": "Is VisitingProfessor the range of teachingAssistantOf?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "teachingAssistantOf"
+  },
+  {
+    "question": "Is Course the range of teacherOf?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "teacherOf"
+  },
+  {
+    "question": "Is Department the range of teacherOf?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "teacherOf"
+  },
+  {
+    "question": "Is Organization the range of subOrganizationOf?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "subOrganizationOf"
+  },
+  {
+    "question": "Is Research the range of subOrganizationOf?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "subOrganizationOf"
+  },
+  {
+    "question": "Is Publication the range of softwareDocumentation?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "softwareDocumentation"
+  },
+  {
+    "question": "Is University the range of softwareDocumentation?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "softwareDocumentation"
+  },
+  {
+    "question": "Is Research the range of researchProject?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "researchProject"
+  },
+  {
+    "question": "Is Book the range of researchProject?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "researchProject"
+  },
+  {
+    "question": "Is Research the range of publicationResearch?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "publicationResearch"
+  },
+  {
+    "question": "Is PostDoc the range of publicationResearch?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "publicationResearch"
+  },
+  {
+    "question": "Is Person the range of publicationAuthor?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "publicationAuthor"
+  },
+  {
+    "question": "Is Professor the range of publicationAuthor?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "publicationAuthor"
+  },
+  {
+    "question": "Is Publication the range of orgPublication?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "orgPublication"
+  },
+  {
+    "question": "Is University the range of orgPublication?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "orgPublication"
+  },
+  {
+    "question": "Is Person the range of member?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "member"
+  },
+  {
+    "question": "Is ResearchGroup the range of member?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "member"
+  },
+  {
+    "question": "Is University the range of mastersDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "mastersDegreeFrom"
+  },
+  {
+    "question": "Is Specification the range of mastersDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "mastersDegreeFrom"
+  },
+  {
+    "question": "Is Course the range of listedCourse?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "listedCourse"
+  },
+  {
+    "question": "Is GraduateStudent the range of listedCourse?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "listedCourse"
+  },
+  {
+    "question": "Is Person the range of hasAlumnus?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "hasAlumnus"
+  },
+  {
+    "question": "Is TeachingAssistant the range of hasAlumnus?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "hasAlumnus"
+  },
+  {
+    "question": "Is University the range of doctoralDegreeFrom?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "doctoralDegreeFrom"
+  },
+  {
+    "question": "Is AdministrativeStaff the range of doctoralDegreeFrom?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "doctoralDegreeFrom"
+  },
+  {
+    "question": "Is University the range of degreeFrom?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "degreeFrom"
+  },
+  {
+    "question": "Is College the range of degreeFrom?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "degreeFrom"
+  },
+  {
+    "question": "Is Organization the range of affiliatedOrganizationOf?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "affiliatedOrganizationOf"
+  },
+  {
+    "question": "Is SystemsStaff the range of affiliatedOrganizationOf?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "affiliatedOrganizationOf"
+  },
+  {
+    "question": "Is Person the range of affiliateOf?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "affiliateOf"
+  },
+  {
+    "question": "Is GraduateStudent the range of affiliateOf?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "affiliateOf"
+  },
+  {
+    "question": "Is Professor the range of advisor?",
+    "answer": true,
+    "reasoning_type": "range_true",
+    "property": "advisor"
+  },
+  {
+    "question": "Is Work the range of advisor?",
+    "answer": false,
+    "reasoning_type": "range_false",
+    "property": "advisor"
+  },
+  {
+    "question": "If X teacherOf Y, must X be a Faculty?",
+    "answer": true,
+    "reasoning_type": "domain_inference"
+  },
+  {
+    "question": "If X teacherOf Y, must X be a Person?",
+    "answer": true,
+    "reasoning_type": "domain_inference"
+  },
+  {
+    "question": "If X teacherOf Y, must X be a Student?",
+    "answer": false,
+    "reasoning_type": "domain_inference"
+  },
+  {
+    "question": "If X advisor Y, must Y be a Professor?",
+    "answer": true,
+    "reasoning_type": "range_inference"
+  }
+]

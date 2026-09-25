@@ -1,0 +1,402 @@
+[
+  {
+    "orig_index":12,
+    "question":"Is Research a subclass of Work?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Research",
+    "sup":"Work"
+  },
+  {
+    "orig_index":123,
+    "question":"Is Chair a subclass of ClericalStaff?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Chair",
+    "sup":"ClericalStaff"
+  },
+  {
+    "orig_index":50,
+    "question":"Is Lecturer a subclass of Employee?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Lecturer",
+    "sup":"Employee"
+  },
+  {
+    "orig_index":146,
+    "question":"Is SystemsStaff a subclass of Manual?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"SystemsStaff",
+    "sup":"Manual"
+  },
+  {
+    "orig_index":71,
+    "question":"Is AssociateProfessor a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"AssociateProfessor",
+    "sup":"Person"
+  },
+  {
+    "orig_index":134,
+    "question":"Is Lecturer a subclass of Course?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Lecturer",
+    "sup":"Course"
+  },
+  {
+    "orig_index":53,
+    "question":"Is GraduateStudent a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"GraduateStudent",
+    "sup":"Person"
+  },
+  {
+    "orig_index":62,
+    "question":"Is Dean a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Dean",
+    "sup":"Person"
+  },
+  {
+    "orig_index":47,
+    "question":"Is Professor a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Professor",
+    "sup":"Person"
+  },
+  {
+    "orig_index":42,
+    "question":"Is TechnicalReport a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"TechnicalReport",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":16,
+    "question":"Is Manual a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Manual",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":30,
+    "question":"Is College a subclass of Organization?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"College",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":76,
+    "question":"Is Student a subclass of Employee?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Student",
+    "sup":"Employee"
+  },
+  {
+    "orig_index":24,
+    "question":"Is Employee a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Employee",
+    "sup":"Person"
+  },
+  {
+    "orig_index":13,
+    "question":"Is Program a subclass of Organization?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Program",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":6,
+    "question":"Is SystemsStaff a subclass of AdministrativeStaff?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"SystemsStaff",
+    "sup":"AdministrativeStaff"
+  },
+  {
+    "orig_index":129,
+    "question":"Is AssistantProfessor a subclass of FullProfessor?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"AssistantProfessor",
+    "sup":"FullProfessor"
+  },
+  {
+    "orig_index":94,
+    "question":"Is Book a subclass of VisitingProfessor?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Book",
+    "sup":"VisitingProfessor"
+  },
+  {
+    "orig_index":88,
+    "question":"Is ResearchAssistant a subclass of Publication?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"ResearchAssistant",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":9,
+    "question":"Is Software a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Software",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":15,
+    "question":"Is PostDoc a subclass of Faculty?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"PostDoc",
+    "sup":"Faculty"
+  },
+  {
+    "orig_index":32,
+    "question":"Is Chair a subclass of Professor?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Chair",
+    "sup":"Professor"
+  },
+  {
+    "orig_index":65,
+    "question":"Is ClericalStaff a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"ClericalStaff",
+    "sup":"Person"
+  },
+  {
+    "orig_index":80,
+    "question":"Is Faculty a subclass of UndergraduateStudent?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Faculty",
+    "sup":"UndergraduateStudent"
+  },
+  {
+    "orig_index":57,
+    "question":"Is FullProfessor a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"FullProfessor",
+    "sup":"Person"
+  },
+  {
+    "orig_index":33,
+    "question":"Is Book a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Book",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":143,
+    "question":"Is TechnicalReport a subclass of ResearchAssistant?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"TechnicalReport",
+    "sup":"ResearchAssistant"
+  },
+  {
+    "orig_index":55,
+    "question":"Is FullProfessor a subclass of Employee?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"FullProfessor",
+    "sup":"Employee"
+  },
+  {
+    "orig_index":70,
+    "question":"Is AssociateProfessor a subclass of Faculty?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"AssociateProfessor",
+    "sup":"Faculty"
+  },
+  {
+    "orig_index":26,
+    "question":"Is Department a subclass of Organization?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Department",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":54,
+    "question":"Is GraduateCourse a subclass of Work?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"GraduateCourse",
+    "sup":"Work"
+  },
+  {
+    "orig_index":8,
+    "question":"Is Specification a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Specification",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":86,
+    "question":"Is TeachingAssistant a subclass of Department?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"TeachingAssistant",
+    "sup":"Department"
+  },
+  {
+    "orig_index":36,
+    "question":"Is Article a subclass of Publication?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Article",
+    "sup":"Publication"
+  },
+  {
+    "orig_index":68,
+    "question":"Is Chair a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Chair",
+    "sup":"Person"
+  },
+  {
+    "orig_index":4,
+    "question":"Is TechnicalReport a subclass of Article?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"TechnicalReport",
+    "sup":"Article"
+  },
+  {
+    "orig_index":104,
+    "question":"Is TechnicalReport a subclass of Organization?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"TechnicalReport",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":111,
+    "question":"Is UnofficialPublication a subclass of Institute?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"UnofficialPublication",
+    "sup":"Institute"
+  },
+  {
+    "orig_index":44,
+    "question":"Is SystemsStaff a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"SystemsStaff",
+    "sup":"Person"
+  },
+  {
+    "orig_index":141,
+    "question":"Is Schedule a subclass of Dean?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Schedule",
+    "sup":"Dean"
+  },
+  {
+    "orig_index":17,
+    "question":"Is Lecturer a subclass of Faculty?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Lecturer",
+    "sup":"Faculty"
+  },
+  {
+    "orig_index":64,
+    "question":"Is ClericalStaff a subclass of Employee?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"ClericalStaff",
+    "sup":"Employee"
+  },
+  {
+    "orig_index":74,
+    "question":"Is AssistantProfessor a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"AssistantProfessor",
+    "sup":"Person"
+  },
+  {
+    "orig_index":109,
+    "question":"Is FullProfessor a subclass of AssistantProfessor?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"FullProfessor",
+    "sup":"AssistantProfessor"
+  },
+  {
+    "orig_index":51,
+    "question":"Is Lecturer a subclass of Person?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Lecturer",
+    "sup":"Person"
+  },
+  {
+    "orig_index":27,
+    "question":"Is Dean a subclass of Professor?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Dean",
+    "sup":"Professor"
+  },
+  {
+    "orig_index":126,
+    "question":"Is Software a subclass of Organization?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Software",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":19,
+    "question":"Is Institute a subclass of Organization?",
+    "answer":true,
+    "reasoning_type":"subClassOf_direct",
+    "sub":"Institute",
+    "sup":"Organization"
+  },
+  {
+    "orig_index":46,
+    "question":"Is Professor a subclass of Employee?",
+    "answer":true,
+    "reasoning_type":"subClassOf_inferred",
+    "sub":"Professor",
+    "sup":"Employee"
+  },
+  {
+    "orig_index":121,
+    "question":"Is Book a subclass of University?",
+    "answer":false,
+    "reasoning_type":"subClassOf_negative",
+    "sub":"Book",
+    "sup":"University"
+  }
+]

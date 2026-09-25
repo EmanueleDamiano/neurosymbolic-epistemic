@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://swat.cse.lehigh.edu/onto/univ-bench.owl#">
+
+  <owl:Ontology rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl">
+    <rdfs:comment>An university ontology for benchmark tests</rdfs:comment>
+    <rdfs:label>Univ-bench Ontology</rdfs:label>
+    <owl:versionInfo>univ-bench-ontology-owl, ver April 1, 2004</owl:versionInfo>
+  </owl:Ontology>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>is being advised by</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#affiliateOf">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>is affiliated with</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#affiliatedOrganizationOf">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>is affiliated with</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#hasAlumnus">
+        <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"/>
+        <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+        <rdfs:label>has as an alumnus</rdfs:label>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"/>
+    <rdfs:label>has a degree from</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom">
+    <rdfs:subPropertyOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom"/>
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"/>
+    <rdfs:label>has a doctoral degree from</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf">
+    <rdfs:subPropertyOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor"/>
+    <rdfs:label>is the head of</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#listedCourse">
+    <rdfs:domain>
+      <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Schedule">
+        <rdfs:label>schedule</rdfs:label>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+    <rdfs:label>lists as a course</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom">
+    <rdfs:subPropertyOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom"/>
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"/>
+    <rdfs:label>has a masters degree from</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#member">
+    <owl:inverseOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf"/>
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>has as a member</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf">
+    <rdfs:label>member of</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#orgPublication">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>publishes</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>was written by</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationDate">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>was written on</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationResearch">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Research"/>
+    <rdfs:label>is about</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchProject">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Research"/>
+    <rdfs:label>has as a research project</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#softwareDocumentation">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Software"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>is documented in</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#softwareVersion">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Software"/>
+    <rdfs:label>is version</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>is part of</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse">
+    <rdfs:label>is taking</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+    <rdfs:label>teaches</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#teachingAssistantOf">
+    <rdfs:domain>
+      <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant">
+        <owl:equivalentClass>
+          <owl:Class>
+            <owl:intersectionOf>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>
+                      <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#teachingAssistantOf"/>
+                        <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+                      </owl:Restriction>
+                    </rdf:first>
+
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </owl:intersectionOf>
+
+          </owl:Class>
+        </owl:equivalentClass>
+
+        <rdfs:label>university teaching assistant</rdfs:label>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+    <rdfs:label>is a teaching assistant for</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#tenured">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>is tenured:</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom">
+    <rdfs:subPropertyOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom"/>
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:range rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"/>
+    <rdfs:label>has an undergraduate degree from</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor">
+    <rdfs:subPropertyOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf"/>
+    <rdfs:label>Works For</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#age">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>is age</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>can be reached at</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#name">
+    <rdfs:label>name</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#officeNumber">
+    <rdfs:label>office room No.</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest">
+    <rdfs:label>is researching</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#telephone">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>telephone number</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#title">
+    <rdfs:domain rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:label>title</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"/>
+    <rdfs:label>administrative staff worker</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>article</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>assistant professor</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>associate professor</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Book">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>book</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf"/>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department">
+                        <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+                        <rdfs:label>university department</rdfs:label>
+                      </owl:Class>
+                    </owl:someValuesFrom>
+
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>chair</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff"/>
+    <rdfs:label>clerical staff worker</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#College">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>school</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ConferencePaper">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"/>
+    <rdfs:label>conference paper</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work"/>
+    <rdfs:label>teaching course</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf"/>
+                <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#College"/>
+              </owl:Restriction>
+            </rdf:first>
+
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>dean</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf"/>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Program">
+                        <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+                        <rdfs:label>program</rdfs:label>
+                      </owl:Class>
+                    </owl:someValuesFrom>
+
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <rdfs:label>director</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor"/>
+                    <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <rdfs:label>Employee</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"/>
+    <rdfs:label>faculty member</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>full professor</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+    <rdfs:label>Graduate Level Courses</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse"/>
+        <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:label>graduate student</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Institute">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>institute</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#JournalArticle">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"/>
+    <rdfs:label>journal article</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"/>
+    <rdfs:label>lecturer</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Manual">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>manual</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization">
+    <rdfs:label>organization</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person">
+    <rdfs:label>person</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"/>
+    <rdfs:label>post doctorate</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"/>
+    <rdfs:label>professor</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication">
+    <rdfs:label>publication</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Research">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work"/>
+    <rdfs:label>research work</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor"/>
+        <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:label>university research assistant</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>research group</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Software">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>software program</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Specification">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>published specification</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse"/>
+                    <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <rdfs:label>student</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff"/>
+    <rdfs:label>systems staff worker</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#TechnicalReport">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"/>
+    <rdfs:label>technical report</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student"/>
+    <rdfs:label>undergraduate student</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#University">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization"/>
+    <rdfs:label>university</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#UnofficialPublication">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"/>
+    <rdfs:label>unnoficial publication</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor">
+    <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"/>
+    <rdfs:label>visiting professor</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work">
+    <rdfs:label>Work</rdfs:label>
+  </owl:Class>
+
+  <owl:NamedIndividual rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse00">
+    <rdf:type rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse01">
+    <rdf:type rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#graduate_student_01">
+    <rdf:type rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent"/>
+    <ns0:takesCourse rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse00"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#graduate_student_02">
+    <rdf:type rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent"/>
+    <ns0:takesCourse rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse01"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#graduate_student_03">
+    <rdf:type rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent"/>
+    <ns0:takesCourse rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse00"/>
+    <ns0:takesCourse rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse01"/>
+  </owl:NamedIndividual>
+
+</rdf:RDF>

@@ -1,0 +1,8 @@
+# Direct dependencies: versions observed in the source environment.
+rdflib==7.6.0
+ollama==0.6.2
+pandas==3.0.2
+numpy==2.4.4
+matplotlib==3.10.9
+seaborn==0.13.2
+scikit-learn==1.9.0

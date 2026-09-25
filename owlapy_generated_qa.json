@@ -1,0 +1,1301 @@
+[
+  {
+    "question": "Is VisitingProfessor a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "VisitingProfessor",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is UnofficialPublication a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "UnofficialPublication",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is University a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "University",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is UndergraduateStudent a subclass of Student?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "UndergraduateStudent",
+    "sup": "Student"
+  },
+  {
+    "question": "Is TechnicalReport a subclass of Article?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "TechnicalReport",
+    "sup": "Article"
+  },
+  {
+    "question": "Is TeachingAssistant a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "TeachingAssistant",
+    "sup": "Person"
+  },
+  {
+    "question": "Is SystemsStaff a subclass of AdministrativeStaff?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "SystemsStaff",
+    "sup": "AdministrativeStaff"
+  },
+  {
+    "question": "Is Student a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Student",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Specification a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Specification",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is Software a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Software",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is ResearchGroup a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "ResearchGroup",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is ResearchAssistant a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "ResearchAssistant",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Research a subclass of Work?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Research",
+    "sup": "Work"
+  },
+  {
+    "question": "Is Program a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Program",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is Professor a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Professor",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is PostDoc a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "PostDoc",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is Manual a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Manual",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is Lecturer a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Lecturer",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is JournalArticle a subclass of Article?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "JournalArticle",
+    "sup": "Article"
+  },
+  {
+    "question": "Is Institute a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Institute",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is GraduateStudent a subclass of Student?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "GraduateStudent",
+    "sup": "Student"
+  },
+  {
+    "question": "Is GraduateCourse a subclass of Course?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "GraduateCourse",
+    "sup": "Course"
+  },
+  {
+    "question": "Is FullProfessor a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "FullProfessor",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is Faculty a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Faculty",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Employee a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Employee",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Director a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Director",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Department a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Department",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is Dean a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Dean",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is Course a subclass of Work?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Course",
+    "sup": "Work"
+  },
+  {
+    "question": "Is ConferencePaper a subclass of Article?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "ConferencePaper",
+    "sup": "Article"
+  },
+  {
+    "question": "Is College a subclass of Organization?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "College",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is ClericalStaff a subclass of AdministrativeStaff?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "ClericalStaff",
+    "sup": "AdministrativeStaff"
+  },
+  {
+    "question": "Is Chair a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Chair",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is Book a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Book",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is AssociateProfessor a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "AssociateProfessor",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of Professor?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "AssistantProfessor",
+    "sup": "Professor"
+  },
+  {
+    "question": "Is Article a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "Article",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is AdministrativeStaff a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_direct",
+    "sub": "AdministrativeStaff",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is VisitingProfessor a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "VisitingProfessor",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is VisitingProfessor a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "VisitingProfessor",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is VisitingProfessor a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "VisitingProfessor",
+    "sup": "Person"
+  },
+  {
+    "question": "Is UndergraduateStudent a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "UndergraduateStudent",
+    "sup": "Person"
+  },
+  {
+    "question": "Is TechnicalReport a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "TechnicalReport",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is SystemsStaff a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "SystemsStaff",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is SystemsStaff a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "SystemsStaff",
+    "sup": "Person"
+  },
+  {
+    "question": "Is ResearchAssistant a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "ResearchAssistant",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Professor a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Professor",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Professor a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Professor",
+    "sup": "Person"
+  },
+  {
+    "question": "Is PostDoc a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "PostDoc",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is PostDoc a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "PostDoc",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Lecturer a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Lecturer",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Lecturer a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Lecturer",
+    "sup": "Person"
+  },
+  {
+    "question": "Is JournalArticle a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "JournalArticle",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is GraduateStudent a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "GraduateStudent",
+    "sup": "Person"
+  },
+  {
+    "question": "Is GraduateCourse a subclass of Work?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "GraduateCourse",
+    "sup": "Work"
+  },
+  {
+    "question": "Is FullProfessor a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "FullProfessor",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is FullProfessor a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "FullProfessor",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is FullProfessor a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "FullProfessor",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Faculty a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Faculty",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Director a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Director",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Dean a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Dean",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Dean a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Dean",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is Dean a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Dean",
+    "sup": "Person"
+  },
+  {
+    "question": "Is ConferencePaper a subclass of Publication?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "ConferencePaper",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is ClericalStaff a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "ClericalStaff",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is ClericalStaff a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "ClericalStaff",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Chair a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Chair",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Chair a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Chair",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is Chair a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "Chair",
+    "sup": "Person"
+  },
+  {
+    "question": "Is AssociateProfessor a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssociateProfessor",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is AssociateProfessor a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssociateProfessor",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is AssociateProfessor a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssociateProfessor",
+    "sup": "Person"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of Employee?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssistantProfessor",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of Faculty?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssistantProfessor",
+    "sup": "Faculty"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AssistantProfessor",
+    "sup": "Person"
+  },
+  {
+    "question": "Is AdministrativeStaff a subclass of Person?",
+    "answer": true,
+    "reasoning_type": "subClassOf_inferred",
+    "sub": "AdministrativeStaff",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Student a subclass of Employee?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Student",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Chair a subclass of UnofficialPublication?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Chair",
+    "sup": "UnofficialPublication"
+  },
+  {
+    "question": "Is Article a subclass of FullProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Article",
+    "sup": "FullProfessor"
+  },
+  {
+    "question": "Is University a subclass of PostDoc?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "University",
+    "sup": "PostDoc"
+  },
+  {
+    "question": "Is Faculty a subclass of UndergraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Faculty",
+    "sup": "UndergraduateStudent"
+  },
+  {
+    "question": "Is Director a subclass of Student?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Director",
+    "sup": "Student"
+  },
+  {
+    "question": "Is Department a subclass of ResearchGroup?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Department",
+    "sup": "ResearchGroup"
+  },
+  {
+    "question": "Is College a subclass of GraduateCourse?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "College",
+    "sup": "GraduateCourse"
+  },
+  {
+    "question": "Is University a subclass of Employee?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "University",
+    "sup": "Employee"
+  },
+  {
+    "question": "Is Chair a subclass of JournalArticle?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Chair",
+    "sup": "JournalArticle"
+  },
+  {
+    "question": "Is TeachingAssistant a subclass of Department?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "TeachingAssistant",
+    "sup": "Department"
+  },
+  {
+    "question": "Is University a subclass of Manual?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "University",
+    "sup": "Manual"
+  },
+  {
+    "question": "Is ResearchAssistant a subclass of Publication?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ResearchAssistant",
+    "sup": "Publication"
+  },
+  {
+    "question": "Is Book a subclass of Research?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Book",
+    "sup": "Research"
+  },
+  {
+    "question": "Is Schedule a subclass of UndergraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Schedule",
+    "sup": "UndergraduateStudent"
+  },
+  {
+    "question": "Is Organization a subclass of Manual?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Organization",
+    "sup": "Manual"
+  },
+  {
+    "question": "Is Article a subclass of Schedule?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Article",
+    "sup": "Schedule"
+  },
+  {
+    "question": "Is Article a subclass of Program?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Article",
+    "sup": "Program"
+  },
+  {
+    "question": "Is Book a subclass of VisitingProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Book",
+    "sup": "VisitingProfessor"
+  },
+  {
+    "question": "Is Department a subclass of JournalArticle?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Department",
+    "sup": "JournalArticle"
+  },
+  {
+    "question": "Is Director a subclass of ClericalStaff?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Director",
+    "sup": "ClericalStaff"
+  },
+  {
+    "question": "Is Publication a subclass of Organization?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Publication",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is Software a subclass of Institute?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Software",
+    "sup": "Institute"
+  },
+  {
+    "question": "Is Article a subclass of Institute?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Article",
+    "sup": "Institute"
+  },
+  {
+    "question": "Is ResearchGroup a subclass of Institute?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ResearchGroup",
+    "sup": "Institute"
+  },
+  {
+    "question": "Is Dean a subclass of JournalArticle?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Dean",
+    "sup": "JournalArticle"
+  },
+  {
+    "question": "Is UndergraduateStudent a subclass of Department?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "UndergraduateStudent",
+    "sup": "Department"
+  },
+  {
+    "question": "Is Student a subclass of TechnicalReport?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Student",
+    "sup": "TechnicalReport"
+  },
+  {
+    "question": "Is TechnicalReport a subclass of Organization?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "TechnicalReport",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is Organization a subclass of FullProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Organization",
+    "sup": "FullProfessor"
+  },
+  {
+    "question": "Is Department a subclass of PostDoc?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Department",
+    "sup": "PostDoc"
+  },
+  {
+    "question": "Is PostDoc a subclass of GraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "PostDoc",
+    "sup": "GraduateStudent"
+  },
+  {
+    "question": "Is Schedule a subclass of SystemsStaff?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Schedule",
+    "sup": "SystemsStaff"
+  },
+  {
+    "question": "Is FullProfessor a subclass of AssistantProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "FullProfessor",
+    "sup": "AssistantProfessor"
+  },
+  {
+    "question": "Is AdministrativeStaff a subclass of GraduateCourse?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "AdministrativeStaff",
+    "sup": "GraduateCourse"
+  },
+  {
+    "question": "Is UnofficialPublication a subclass of Institute?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "UnofficialPublication",
+    "sup": "Institute"
+  },
+  {
+    "question": "Is Work a subclass of UndergraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Work",
+    "sup": "UndergraduateStudent"
+  },
+  {
+    "question": "Is ConferencePaper a subclass of GraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ConferencePaper",
+    "sup": "GraduateStudent"
+  },
+  {
+    "question": "Is TechnicalReport a subclass of FullProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "TechnicalReport",
+    "sup": "FullProfessor"
+  },
+  {
+    "question": "Is Organization a subclass of Person?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Organization",
+    "sup": "Person"
+  },
+  {
+    "question": "Is Institute a subclass of Department?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Institute",
+    "sup": "Department"
+  },
+  {
+    "question": "Is ConferencePaper a subclass of Course?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ConferencePaper",
+    "sup": "Course"
+  },
+  {
+    "question": "Is Department a subclass of Director?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Department",
+    "sup": "Director"
+  },
+  {
+    "question": "Is UnofficialPublication a subclass of Research?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "UnofficialPublication",
+    "sup": "Research"
+  },
+  {
+    "question": "Is Institute a subclass of Book?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Institute",
+    "sup": "Book"
+  },
+  {
+    "question": "Is Book a subclass of University?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Book",
+    "sup": "University"
+  },
+  {
+    "question": "Is Lecturer a subclass of Director?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Lecturer",
+    "sup": "Director"
+  },
+  {
+    "question": "Is Chair a subclass of ClericalStaff?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Chair",
+    "sup": "ClericalStaff"
+  },
+  {
+    "question": "Is JournalArticle a subclass of Dean?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "JournalArticle",
+    "sup": "Dean"
+  },
+  {
+    "question": "Is Institute a subclass of Lecturer?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Institute",
+    "sup": "Lecturer"
+  },
+  {
+    "question": "Is Software a subclass of Organization?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Software",
+    "sup": "Organization"
+  },
+  {
+    "question": "Is Faculty a subclass of ConferencePaper?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Faculty",
+    "sup": "ConferencePaper"
+  },
+  {
+    "question": "Is Work a subclass of UnofficialPublication?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Work",
+    "sup": "UnofficialPublication"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of FullProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "AssistantProfessor",
+    "sup": "FullProfessor"
+  },
+  {
+    "question": "Is UndergraduateStudent a subclass of Work?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "UndergraduateStudent",
+    "sup": "Work"
+  },
+  {
+    "question": "Is PostDoc a subclass of UnofficialPublication?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "PostDoc",
+    "sup": "UnofficialPublication"
+  },
+  {
+    "question": "Is ResearchAssistant a subclass of College?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ResearchAssistant",
+    "sup": "College"
+  },
+  {
+    "question": "Is ClericalStaff a subclass of Research?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ClericalStaff",
+    "sup": "Research"
+  },
+  {
+    "question": "Is Lecturer a subclass of Course?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Lecturer",
+    "sup": "Course"
+  },
+  {
+    "question": "Is Book a subclass of Dean?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Book",
+    "sup": "Dean"
+  },
+  {
+    "question": "Is ResearchAssistant a subclass of Work?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "ResearchAssistant",
+    "sup": "Work"
+  },
+  {
+    "question": "Is FullProfessor a subclass of UndergraduateStudent?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "FullProfessor",
+    "sup": "UndergraduateStudent"
+  },
+  {
+    "question": "Is Specification a subclass of Student?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Specification",
+    "sup": "Student"
+  },
+  {
+    "question": "Is Specification a subclass of Department?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Specification",
+    "sup": "Department"
+  },
+  {
+    "question": "Is JournalArticle a subclass of FullProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "JournalArticle",
+    "sup": "FullProfessor"
+  },
+  {
+    "question": "Is Schedule a subclass of Dean?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Schedule",
+    "sup": "Dean"
+  },
+  {
+    "question": "Is Dean a subclass of AssistantProfessor?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Dean",
+    "sup": "AssistantProfessor"
+  },
+  {
+    "question": "Is TechnicalReport a subclass of ResearchAssistant?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "TechnicalReport",
+    "sup": "ResearchAssistant"
+  },
+  {
+    "question": "Is AssociateProfessor a subclass of Specification?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "AssociateProfessor",
+    "sup": "Specification"
+  },
+  {
+    "question": "Is AssistantProfessor a subclass of Lecturer?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "AssistantProfessor",
+    "sup": "Lecturer"
+  },
+  {
+    "question": "Is SystemsStaff a subclass of Manual?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "SystemsStaff",
+    "sup": "Manual"
+  },
+  {
+    "question": "Is Department a subclass of University?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Department",
+    "sup": "University"
+  },
+  {
+    "question": "Is VisitingProfessor a subclass of ClericalStaff?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "VisitingProfessor",
+    "sup": "ClericalStaff"
+  },
+  {
+    "question": "Is FullProfessor a subclass of ResearchGroup?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "FullProfessor",
+    "sup": "ResearchGroup"
+  },
+  {
+    "question": "Is Book a subclass of Director?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Book",
+    "sup": "Director"
+  },
+  {
+    "question": "Is Chair a subclass of GraduateCourse?",
+    "answer": false,
+    "reasoning_type": "subClassOf_negative",
+    "sub": "Chair",
+    "sup": "GraduateCourse"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of GraduateStudent?",
+    "answer": true,
+    "reasoning_type": "instanceOf_direct",
+    "individual": "graduate_student_03",
+    "class": "GraduateStudent"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of Student?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_03",
+    "class": "Student"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of Person?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_03",
+    "class": "Person"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of Article?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_03",
+    "class": "Article"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of ConferencePaper?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_03",
+    "class": "ConferencePaper"
+  },
+  {
+    "question": "Is graduate_student_03 an instance of UndergraduateStudent?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_03",
+    "class": "UndergraduateStudent"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of GraduateStudent?",
+    "answer": true,
+    "reasoning_type": "instanceOf_direct",
+    "individual": "graduate_student_02",
+    "class": "GraduateStudent"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of Student?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_02",
+    "class": "Student"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of Person?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_02",
+    "class": "Person"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of Lecturer?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_02",
+    "class": "Lecturer"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of Specification?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_02",
+    "class": "Specification"
+  },
+  {
+    "question": "Is graduate_student_02 an instance of College?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_02",
+    "class": "College"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of GraduateStudent?",
+    "answer": true,
+    "reasoning_type": "instanceOf_direct",
+    "individual": "graduate_student_01",
+    "class": "GraduateStudent"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of Student?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_01",
+    "class": "Student"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of Person?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "graduate_student_01",
+    "class": "Person"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of SystemsStaff?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_01",
+    "class": "SystemsStaff"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of ConferencePaper?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_01",
+    "class": "ConferencePaper"
+  },
+  {
+    "question": "Is graduate_student_01 an instance of Organization?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "graduate_student_01",
+    "class": "Organization"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of GraduateCourse?",
+    "answer": true,
+    "reasoning_type": "instanceOf_direct",
+    "individual": "GraduateCourse01",
+    "class": "GraduateCourse"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of Work?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "GraduateCourse01",
+    "class": "Work"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of Course?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "GraduateCourse01",
+    "class": "Course"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of Chair?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse01",
+    "class": "Chair"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of Specification?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse01",
+    "class": "Specification"
+  },
+  {
+    "question": "Is GraduateCourse01 an instance of Research?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse01",
+    "class": "Research"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of GraduateCourse?",
+    "answer": true,
+    "reasoning_type": "instanceOf_direct",
+    "individual": "GraduateCourse00",
+    "class": "GraduateCourse"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of Work?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "GraduateCourse00",
+    "class": "Work"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of Course?",
+    "answer": true,
+    "reasoning_type": "instanceOf_inferred",
+    "individual": "GraduateCourse00",
+    "class": "Course"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of Schedule?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse00",
+    "class": "Schedule"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of Specification?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse00",
+    "class": "Specification"
+  },
+  {
+    "question": "Is GraduateCourse00 an instance of Faculty?",
+    "answer": false,
+    "reasoning_type": "instanceOf_negative",
+    "individual": "GraduateCourse00",
+    "class": "Faculty"
+  },
+  {
+    "question": "Is TestResearchGroup a subOrganization of TestDepartment?",
+    "answer": true,
+    "reasoning_type": "transitive_stated"
+  },
+  {
+    "question": "Is TestDepartment a subOrganization of TestUniversity?",
+    "answer": true,
+    "reasoning_type": "transitive_stated"
+  },
+  {
+    "question": "Is TestResearchGroup a subOrganization of TestUniversity?",
+    "answer": true,
+    "reasoning_type": "transitive_inferred"
+  },
+  {
+    "question": "Is TestUniversity a subOrganization of TestResearchGroup?",
+    "answer": false,
+    "reasoning_type": "transitive_negative"
+  },
+  {
+    "question": "Is TestDepartment a subOrganization of TestResearchGroup?",
+    "answer": false,
+    "reasoning_type": "transitive_negative"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "path": "subclass_justification.py",
+    "sha256": "12bb9fc04b19eaadbeeb6276b7cb8a6bccdebb9ebe04e46541e83a9026857944",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "axiom_match.py",
+    "sha256": "c05ae911e69f91ebb562d34f77a61e430c7929a7d77e6056a7a1afa95e89f5d3",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "univ-bench.owl",
+    "sha256": "99183857603322e85c62ddeacef991c88af2a393fc15d644caad2a8992b6ee16",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "univ-bench-inst.ttl",
+    "sha256": "31a89d007241fb7345350b70b25b4f481959c355da980d7a8b54a78c25aa76ab",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "univ-bench-inst.txt",
+    "sha256": "31a89d007241fb7345350b70b25b4f481959c355da980d7a8b54a78c25aa76ab",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "univ-bench-inst.xml",
+    "sha256": "2c264e3c83eedbd8462c21b1d13c404c0086279c411eca90fd46002da98f4fdb",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "univ-bench-inst_xml.txt",
+    "sha256": "2c264e3c83eedbd8462c21b1d13c404c0086279c411eca90fd46002da98f4fdb",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "University0_0.owl",
+    "sha256": "13cb58aa1b233d664fa0208ee5d1a8cf5a2a975b8eef6e4d4084028245157790",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "owlapy_generated_qa.json",
+    "sha256": "464392a8ec5161eb7761904c6de18caae9aacbd62682fd257e365adfda37e6d0",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "owlapy_generated_qa_domain_range.json",
+    "sha256": "0ff5215b0abac43825c30551cc0cc945236b848933aeef0c9ffa54dfe4481570",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "subclass_balanced_sample_50.json",
+    "sha256": "5fe0dd527f01f0d6d1b91f67b55ba376c683627735e1b17d73c54fc18aa89571",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "subclass_balanced_sample_50.csv",
+    "sha256": "a36357447e4ab9ece0169f8b7a04329f1d07a3e3b48179b33760b85db7415479",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "axiom_eval_qwen_3_5_4b_subclass_balanced50.csv",
+    "sha256": "747fe1f5a84bbd8a3e9b7281d50ed59b956c9f7756eea31c39a730927b62440d",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "confusion_matrix_balanced50_axioms.png",
+    "sha256": "eac5a4eb922022831b1e8b3cdf6cf3535b82a031312eb8e7f7ee4adf4601c504",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "data/pizza.ttl",
+    "sha256": "71530143510f2ac98c2286ffca59552e12a4017ca9bf6c51318391daf10113b7",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "results_qwen_3_5_4b_domain_range_owlapy.jsonl",
+    "sha256": "5f36e6b65a116cac2d66562d279dbdde28a5f66dd6e5c2015f4103c21d1f606a",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "results_qwen_3_5_4b_subclass_balanced50_axioms_ttl.jsonl",
+    "sha256": "c3d8ffe00fd25ed6f10e23ebf2e2990c15007e245485ef303574d54177ed31a0",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "results_qwen_3_5_4b_subclass_queries_owlapy.jsonl",
+    "sha256": "6e4138c723f80a9187f709f803d08a2458b8331d0e8df78bc9aa6f240999e27e",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "results_qwen_3_5_4b_subclass_queries_owlapy_xml.jsonl",
+    "sha256": "b3d32817dcc63c3a966fd84f33e172d39dc87f46d1f7962460ad3d20825c6bd8",
+    "status": "unchanged copy"
+  },
+  {
+    "path": "owlapy_inference.ipynb",
+    "source_sha256": "75a2cff1c92c09fd001bebcc0efc86543d9c2e3d211fa0328bbe68231a4e9b70",
+    "status": "outputs and metadata cleared; optional commented provider example removed from inference notebook"
+  },
+  {
+    "path": "owlapy_queries_testing.ipynb",
+    "source_sha256": "1b6508ee629f28d817ef5bd6a1603d6095b856ddafa49d55e7dcf0bc0a2d6eba",
+    "status": "outputs and metadata cleared; optional commented provider example removed from inference notebook"
+  }
+]

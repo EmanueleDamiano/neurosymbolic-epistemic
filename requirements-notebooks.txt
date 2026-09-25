@@ -1,0 +1,5 @@
+-r requirements.txt
+owlapy==1.6.5
+JPype1==1.7.1
+jupyterlab>=4,<5
+ipykernel>=6,<8
