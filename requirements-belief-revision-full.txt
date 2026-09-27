@@ -1,0 +1,3 @@
+# Section 2 also needs Java on PATH for the bundled HermiT reasoner.
+-r requirements-belief-revision.txt
+owlready2==0.51

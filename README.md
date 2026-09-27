@@ -2,7 +2,55 @@
 
 Pacchetto collaborativo degli ultimi esperimenti LUBM/owlapy, copiato il 25 settembre 2026. Gli originali non sono stati modificati.
 
-## Avvio rapido: valutare i risultati inclusi
+## Pilot di revisione delle credenze
+
+Aprire `belief_revision_lubm.ipynb` per una prima prova con Ollama locale e
+`qwen2.5-coder:7b` (deve essere già installato). Il notebook esegue tre chiamate:
+baseline, ritiro di un assioma necessario e aggiunta di un assioma irrilevante come
+controllo. I due aggiornamenti partono dalla stessa risposta iniziale.
+
+Il contesto è un frammento estratto e verificato da LUBM, composto solo da inclusioni
+positive fra classi nominate; non è l'intera ontologia. L'oracolo di raggiungibilità
+è completo per questo frammento e distingue entailment da non-entailment, senza
+interpretare quest'ultimo come falsità. Si valutano risposta e supporto citato;
+la revisione è interpretata condizionatamente a una baseline corretta e giustificata.
+
+Ambiente minimo separato dalle dipendenze degli esperimenti storici, senza Java:
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-belief-revision.txt
+.\.venv\Scripts\python.exe -m ipykernel install --user --name epistemic-pilot --display-name "Python (epistemic pilot)"
+```
+
+In un editor Jupyter selezionare `Python (epistemic pilot)` ed eseguire tutte le celle.
+La cella di configurazione permette di cambiare modello. Prompt, risposte grezze,
+digest del modello, versione Ollama, opzioni, hash dell'ontologia e valutazioni
+vengono salvati in `generated/belief_revision/<run_id>/` senza sovrascrivere i run.
+Questo è un singolo episodio dimostrativo, non una stima delle capacità del modello.
+
+### Seconda sezione: intera ontologia e supporti alternativi
+
+La sezione `Esperimento 2 — Ontologia LUBM completa` dello stesso notebook è
+autonoma e conserva il pilot precedente. Invia tutte le 319 triple di
+`univ-bench-inst.ttl`, riserializzate senza perdita; negli aggiornamenti ritira
+solo gli assiomi previsti. Le citazioni sono triple con URI completi, non ID artificiali.
+HermiT verifica entailment e consistenza di ogni snapshot, e la sufficienza dei
+supporti citati. Occorrono Java nel PATH e le dipendenze aggiuntive:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-belief-revision-full.txt
+```
+
+I due casi comprendono sei chiamate Ollama: il caso iniziale su tutta LUBM e un
+caso con catena di tre inclusioni più una via alternativa sintetica documentata.
+Nel secondo caso ritirare una sola via deve conservare la conclusione, ritirarle
+entrambe deve farla abbandonare. I rami ripartono indipendentemente dalla baseline.
+Il contesto Ollama è impostato a 32768 token, con controlli conservativi per evitare
+troncamenti. Snapshot, prompt, risposte e valutazioni sono conservati in
+`generated/belief_revision_full/<run_id>/`.
+
+## Valutare i risultati storici
 
 Dalla radice del repository, con Python 3.11 o successivo (ambiente sorgente: Python 3.14.4):
 
