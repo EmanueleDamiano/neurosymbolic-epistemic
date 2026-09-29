@@ -1,0 +1,2 @@
+*.ttl -text whitespace=cr-at-eol,-blank-at-eof
+dataset.json -text whitespace=cr-at-eol

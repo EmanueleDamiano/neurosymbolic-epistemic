@@ -52,11 +52,12 @@ troncamenti. Snapshot, prompt, risposte e valutazioni sono conservati in
 
 ## Benchmark di grounding e ritiro su query positive
 
-`subclass_grounding_benchmark.ipynb` implementa il primo protocollo a score fisso,
-separato dal notebook esplorativo. Usa 6 query positive di sottoclasse tratte da
-`owlapy_generated_qa.json`, due per profondità esplicita di prova 1, 2 e 3.
-Le query, le prove di riferimento e gli snapshot completi sono congelati e tracciabili
-in `benchmarks/subclass_grounding_v1/`. Le prove ammesse in questa prima versione
+`subclass_grounding_benchmark.ipynb` implementa il protocollo a score fisso,
+separato dal notebook esplorativo. Il numero di query positive di sottoclasse tratte da
+`owlapy_generated_qa.json` è configurabile: `N_QUERIES = "all"` oppure un intero positivo.
+Il dataset originale di 6 casi rimane in `benchmarks/subclass_grounding_v1/`.
+Il nuovo `benchmarks/subclass_grounding_v2_all/` contiene tutte le 52 query ammissibili:
+33 con prova esplicita da 1 passaggio, 15 da 2 e 4 da 3. Le prove ammesse
 sono insiemi di inclusioni esplicite fra classi nominate; tutto il resto di LUBM
 rimane nel contesto. HermiT verifica ogni snapshot prima dell'esecuzione.
 
@@ -68,23 +69,45 @@ assiomi e l'entailment della query dal solo insieme citato, ammettendo prove alt
 
 Il **grounded score** è la quota di risposte originali corrette con supporto valido.
 Il **withdrawal score** è la quota di ritiri corretti. Il **paired grounded revision score**
-è la quota di coppie in cui entrambi i turni superano la verifica, sul totale dei 6 casi.
+è la quota di coppie in cui entrambi i turni superano la verifica, sul totale dei casi selezionati.
 Non si escludono dal denominatore le baseline sbagliate. Errori di formato contano
 come insuccessi; errori infrastrutturali rendono il run non confrontabile.
 
 Usare l'ambiente `requirements-belief-revision-full.txt` e il kernel `Python (epistemic pilot)`.
-Modificare `MODELS` nel notebook per confrontare modelli già installati con gli stessi casi.
-Il runner è utilizzabile anche da terminale:
+Modificare `N_QUERIES`, `SELECTION_SEED` e `MODELS` nel notebook. La cartella del dataset
+viene scelta dalla configurazione; una cartella già presente viene verificata e riutilizzata,
+mai sovrascritta. Le prime celle preparano il dataset; il ciclo su `MODELS` avvia le chiamate LLM.
+**Run All** esegue anche i modelli: con 52 query sono 104 chiamate per modello.
+
+Il builder verifica con HermiT tutto il pool prima di selezionare N query, senza ripetizioni,
+con seed riproducibile. Non impone più quote per profondità o soggetti distinti. Un numero superiore
+ai casi ammissibili genera un errore; nessun campione viene ridotto silenziosamente.
+Sono registrati numero richiesto, casi ammissibili, esclusioni e distribuzione per profondità.
+Gli score vengono riportati anche separatamente per profondità.
+
+Per creare 25 casi e poi eseguirli (il percorso per `build` deve essere nuovo):
 
 ```powershell
-.\.venv\Scripts\python.exe subclass_grounding_benchmark.py run --model qwen2.5-coder:7b
+.\.venv\Scripts\python.exe subclass_grounding_benchmark.py build --dataset benchmarks/subclass_grounding_v2_25 --num-queries 25
+.\.venv\Scripts\python.exe subclass_grounding_benchmark.py run --dataset benchmarks/subclass_grounding_v2_25 --model qwen2.5-coder:7b
 .\.venv\Scripts\python.exe -m unittest discover -s tests -p test_subclass_grounding.py -v
 ```
+
+Per eseguire tutte le query già preparate:
+
+```powershell
+.\.venv\Scripts\python.exe subclass_grounding_benchmark.py run --dataset benchmarks/subclass_grounding_v2_all --model qwen2.5-coder:7b
+```
+
+`--num-queries all` è il default di `build`; `--seed` controlla il campionamento.
+Queste opzioni non cambiano un run: ogni run usa integralmente il suo dataset congelato.
+`run` senza `--dataset` continua a usare il pilot v1 per compatibilità.
 
 I run sono salvati in `generated/subclass_grounding/<run_id>/`: `manifest.json`,
 `responses.jsonl`, `evaluation.json` e copia degli snapshot. `compare_runs` rifiuta
 confronti fra dataset, prompt, opzioni o evaluator diversi. Il builder rifiuta di
 sovrascrivere un dataset esistente; per un nuovo dataset usare una directory/versione nuova.
+L'aggiornamento del codice cambia il fingerprint: per confronti nuovi rieseguire i modelli con la stessa versione.
 Questo pilot non misura ancora il comportamento su modifiche irrilevanti o supporti
 alternativi sopravvissuti al ritiro, e non costituisce una graduatoria statistica.
 

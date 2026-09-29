@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import argparse
-from collections import deque
+from collections import Counter, deque
 from datetime import datetime, timezone
 import hashlib
 import importlib.metadata
@@ -137,8 +137,38 @@ def named_path(graph, query):
     return None
 
 
-def build_dataset(destination=DATASET, seed=20260929):
-    """Select two verified cases per explicit proof depth 1, 2, 3, without LLM outputs."""
+def query_count(value):
+    """Accept a positive integer or 'all'; never silently cap the requested size."""
+    if value == "all":
+        return "all"
+    if isinstance(value, bool) or not isinstance(value, (int, str)):
+        raise ValueError("n_queries must be a positive integer or 'all'.")
+    try:
+        count = int(value)
+    except ValueError as exc:
+        raise ValueError("n_queries must be a positive integer or 'all'.") from exc
+    if count < 1:
+        raise ValueError("n_queries must be positive.")
+    return count
+
+
+def select_verified_cases(eligible, n_queries="all", seed=20260929):
+    n_queries = query_count(n_queries)
+    if not eligible:
+        raise ValueError("No eligible queries passed the reasoner checks.")
+    if n_queries != "all" and n_queries > len(eligible):
+        raise ValueError(f"Requested {n_queries} queries, but only {len(eligible)} are eligible. Use 'all' or a smaller number.")
+    selected = sorted(eligible, key=lambda item: item[0]["query"])
+    random.Random(seed).shuffle(selected)
+    if n_queries != "all":
+        selected = selected[:n_queries]
+    # Sampling is uniform without replacement; display order is by proof depth.
+    return sorted(selected, key=lambda item: (item[0]["explicit_proof_depth"], item[0]["query"]))
+
+
+def build_dataset(destination=DATASET, seed=20260929, n_queries="all"):
+    """Verify the full positive pool, then freeze all or N seeded sampled queries."""
+    n_queries = query_count(n_queries)
     destination = Path(destination)
     if destination.exists():
         raise FileExistsError("Dataset already exists. Use a new version directory; never overwrite it.")
@@ -147,7 +177,7 @@ def build_dataset(destination=DATASET, seed=20260929):
     graph = rdflib.Graph().parse(source, format="turtle")
     rows = json.loads(query_source.read_text(encoding="utf-8"))
     oracle = Oracle()
-    candidates, seen = [], set()
+    candidates, seen, excluded = [], set(), []
     for index, row in enumerate(rows):
         if row.get("answer") is not True or not row.get("reasoning_type", "").startswith("subClassOf"):
             continue
@@ -156,52 +186,41 @@ def build_dataset(destination=DATASET, seed=20260929):
             continue
         seen.add(query)
         proof = named_path(graph, query)
-        if proof and len(proof) in (1, 2, 3):
+        if proof:
             candidates.append((query, proof, index, row))
-    rng = random.Random(seed)
-    selected, excluded, used_subjects = [], [], set()
-    # Allocate scarce deeper cases first, preserving distinct subjects across strata.
-    for depth in (3, 2, 1):
-        pool = sorted((c for c in candidates if len(c[1]) == depth), key=lambda c: c[0])
-        rng.shuffle(pool)
-        count = 0
-        for query, proof, index, row in pool:
-            if query[0] in used_subjects:
-                continue
-            if not oracle.entails(graph, query):
-                excluded.append({"source_index": index, "reason": "positive label not confirmed"})
-                continue
-            # Search for ONE necessary asserted edge; reject if alternative OWL proofs survive every cut.
-            chosen = None
-            for edge in reversed(proof):
-                withdrawn = copy_graph(graph)
-                withdrawn.remove(edge)
-                if not oracle.entails(withdrawn, query):
-                    chosen = (edge, withdrawn)
-                    break
-            if chosen is None:
-                excluded.append({"source_index": index, "reason": "no single proof edge kills entailment"})
-                continue
-            edge, withdrawn = chosen
-            selected.append(({
-                "id": f"subclass_{len(selected) + 1:02d}", "query": list(query),
-                "source_index": index, "source_question": row["question"],
-                "source_reasoning_type": row["reasoning_type"],
-                "explicit_proof_depth": depth,
-                "reference_support": [triple_json(t) for t in proof],
-                "removed_axioms": [triple_json(edge)],
-                "expected": {"original": "entailed", "withdrawal": "not_entailed"},
-            }, withdrawn))
-            used_subjects.add(query[0])
-            count += 1
-            if count == 2:
+        else:
+            excluded.append({"source_index": index, "reason": "no nonempty explicit named-subclass proof"})
+    eligible = []
+    for query, proof, index, row in sorted(candidates, key=lambda c: c[0]):
+        if not oracle.entails(graph, query):
+            excluded.append({"source_index": index, "reason": "positive label not confirmed"})
+            continue
+        chosen = None
+        for edge in reversed(proof):
+            withdrawn = copy_graph(graph)
+            withdrawn.remove(edge)
+            if not oracle.entails(withdrawn, query):
+                chosen = (edge, withdrawn)
                 break
-        if count != 2:
-            raise RuntimeError(f"Not enough eligible cases at depth {depth}.")
-    selected.sort(key=lambda item: (item[0]["explicit_proof_depth"], item[0]["query"]))
+        if chosen is None:
+            excluded.append({"source_index": index, "reason": "no single proof edge kills entailment"})
+            continue
+        edge, withdrawn = chosen
+        eligible.append(({
+            "query": list(query), "source_index": index, "source_question": row["question"],
+            "source_reasoning_type": row["reasoning_type"], "explicit_proof_depth": len(proof),
+            "reference_support": [triple_json(t) for t in proof],
+            "removed_axioms": [triple_json(edge)],
+            "expected": {"original": "entailed", "withdrawal": "not_entailed"},
+        }, withdrawn))
+    selected = select_verified_cases(eligible, n_queries, seed)
     for index, (case, _) in enumerate(selected, 1):
         case["id"] = f"subclass_{index:02d}"
     destination.mkdir(parents=True)
+    # Preserve snapshot bytes and hashes when committing on Windows.
+    (destination / ".gitattributes").write_text(
+        "*.ttl -text whitespace=cr-at-eol,-blank-at-eof\ndataset.json -text whitespace=cr-at-eol\n",
+        encoding="utf-8")
     files = {}
     def snapshot(filename, g):
         text = g.serialize(format="turtle")
@@ -216,8 +235,12 @@ def build_dataset(destination=DATASET, seed=20260929):
         snapshot(case["snapshots"]["withdrawal"], withdrawn)
         cases.append(case)
     data = {
-        "version": "subclass_grounding_v1", "seed": seed, "cases": cases,
-        "selection": "2 per explicit named-subclass proof depth 1/2/3; distinct subjects; single critical edge withdrawal",
+        "version": destination.name, "schema_version": 2, "seed": seed, "cases": cases,
+        "requested_n_queries": n_queries, "eligible_queries": len(eligible),
+        "selected_queries": len(selected),
+        "eligible_by_depth": dict(sorted(Counter(str(c[0]["explicit_proof_depth"]) for c in eligible).items())),
+        "selected_by_depth": dict(sorted(Counter(str(c[0]["explicit_proof_depth"]) for c in selected).items())),
+        "selection": "all eligible or seeded uniform sample without replacement; no per-depth quota or subject uniqueness constraint; single critical edge withdrawal",
         "positive_source_queries": len(seen), "candidate_queries": len(candidates),
         "selection_exclusions": excluded,
         "sources": {source.name: digest(source.read_bytes()), query_source.name: digest(query_source.read_bytes())},
@@ -349,7 +372,16 @@ def evaluate(records, data, graphs, oracle):
         "correct_original_without_valid_support_count": sum(r["answer_correct"] and not r["success"] for r in originals),
         "withdrawal_stale_citation_count": sum(bool(r["stale_axioms"]) for r in rows if r["condition"] == "withdrawal"),
     }
-    return {"summary": summary, "pairs": pairs, "responses": rows}
+    by_depth = {}
+    for depth in sorted({p["depth"] for p in pairs}):
+        group = [p for p in pairs if p["depth"] == depth]
+        by_depth[str(depth)] = {
+            "n_pairs": len(group),
+            "original_grounded_score": sum(p["original_success"] for p in group) / len(group) if complete else None,
+            "withdrawal_score": sum(p["withdrawal_success"] for p in group) / len(group) if complete else None,
+            "paired_grounded_revision_score": sum(p["pair_success"] for p in group) / len(group) if complete else None,
+        }
+    return {"summary": summary, "by_depth": by_depth, "pairs": pairs, "responses": rows}
 
 
 def run_benchmark(model="qwen2.5-coder:7b", directory=DATASET, options=None):
@@ -465,9 +497,14 @@ if __name__ == "__main__":
     parser.add_argument("command", choices=["build", "run"])
     parser.add_argument("--model", default="qwen2.5-coder:7b")
     parser.add_argument("--dataset", type=Path, default=DATASET)
+    parser.add_argument("--num-queries", type=query_count, default="all",
+                        help="Build only: positive number of queries or 'all' (default).")
+    parser.add_argument("--seed", type=int, default=20260929, help="Build sampling seed.")
     args = parser.parse_args()
+    if args.command == "run" and (args.num_queries != "all" or args.seed != 20260929):
+        parser.error("--num-queries and --seed configure build, not run; use a frozen dataset.")
     if args.command == "build":
-        dataset = build_dataset(args.dataset)
-        print(json.dumps(dataset, indent=2))
+        dataset = build_dataset(args.dataset, seed=args.seed, n_queries=args.num_queries)
+        print(json.dumps({k: dataset[k] for k in ("version", "requested_n_queries", "eligible_queries", "selected_queries", "selected_by_depth")}, indent=2))
     else:
         run_benchmark(args.model, args.dataset)
