@@ -1,0 +1,3 @@
+# Preserve exact bytes: dataset.json records SHA-256 hashes of these frozen files.
+*.ttl -text whitespace=cr-at-eol,-blank-at-eof
+dataset.json -text whitespace=cr-at-eol

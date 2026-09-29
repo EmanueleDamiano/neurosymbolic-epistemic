@@ -1,0 +1,253 @@
+{
+  "version": "subclass_grounding_v1",
+  "seed": 20260929,
+  "cases": [
+    {
+      "id": "subclass_01",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work"
+      ],
+      "source_index": 28,
+      "source_question": "Is Course a subclass of Work?",
+      "source_reasoning_type": "subClassOf_direct",
+      "explicit_proof_depth": 1,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_01_withdrawal.ttl"
+      }
+    },
+    {
+      "id": "subclass_02",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+      ],
+      "source_index": 23,
+      "source_question": "Is Faculty a subclass of Employee?",
+      "source_reasoning_type": "subClassOf_direct",
+      "explicit_proof_depth": 1,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_02_withdrawal.ttl"
+      }
+    },
+    {
+      "id": "subclass_03",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+      ],
+      "source_index": 46,
+      "source_question": "Is Professor a subclass of Employee?",
+      "source_reasoning_type": "subClassOf_inferred",
+      "explicit_proof_depth": 2,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_03_withdrawal.ttl"
+      }
+    },
+    {
+      "id": "subclass_04",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#TechnicalReport",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"
+      ],
+      "source_index": 42,
+      "source_question": "Is TechnicalReport a subclass of Publication?",
+      "source_reasoning_type": "subClassOf_inferred",
+      "explicit_proof_depth": 2,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#TechnicalReport",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_04_withdrawal.ttl"
+      }
+    },
+    {
+      "id": "subclass_05",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+      ],
+      "source_index": 72,
+      "source_question": "Is AssistantProfessor a subclass of Employee?",
+      "source_reasoning_type": "subClassOf_inferred",
+      "explicit_proof_depth": 3,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_05_withdrawal.ttl"
+      }
+    },
+    {
+      "id": "subclass_06",
+      "query": [
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor",
+        "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+      ],
+      "source_index": 69,
+      "source_question": "Is AssociateProfessor a subclass of Employee?",
+      "source_reasoning_type": "subClassOf_inferred",
+      "explicit_proof_depth": 3,
+      "reference_support": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "removed_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee"
+        }
+      ],
+      "expected": {
+        "original": "entailed",
+        "withdrawal": "not_entailed"
+      },
+      "snapshots": {
+        "original": "ontology_original.ttl",
+        "withdrawal": "subclass_06_withdrawal.ttl"
+      }
+    }
+  ],
+  "selection": "2 per explicit named-subclass proof depth 1/2/3; distinct subjects; single critical edge withdrawal",
+  "positive_source_queries": 76,
+  "candidate_queries": 55,
+  "selection_exclusions": [],
+  "sources": {
+    "univ-bench-inst.ttl": "366b153399dc29fbd7afb7ae27fc08d5b11cf5cff46763e539f1e84908b4baf4",
+    "owlapy_generated_qa.json": "8e900d20e080d083b0267def4606d6e810b91a52f1dd98fa4c826bbfa7a1527f"
+  },
+  "files": {
+    "ontology_original.ttl": "c107b17c54fed7fdea90aace8dfd782732393a362c57457b80728ece36edec1f",
+    "subclass_01_withdrawal.ttl": "39f0c02e0ae5f7d54e871cb4137c0c253e406a9a94f8bed482d428aa34674a7f",
+    "subclass_02_withdrawal.ttl": "ff357460bc7a43a68ed66e3db17c61ada697458d415e829b049cea8de2904091",
+    "subclass_03_withdrawal.ttl": "ff357460bc7a43a68ed66e3db17c61ada697458d415e829b049cea8de2904091",
+    "subclass_04_withdrawal.ttl": "2aafbf01bd3da8717657161e5b0687a3d0efa67e0576d3fceca558179097ff41",
+    "subclass_05_withdrawal.ttl": "ff357460bc7a43a68ed66e3db17c61ada697458d415e829b049cea8de2904091",
+    "subclass_06_withdrawal.ttl": "ff357460bc7a43a68ed66e3db17c61ada697458d415e829b049cea8de2904091"
+  },
+  "oracle": "HermiT via Owlready2",
+  "owlready2": "0.51"
+}

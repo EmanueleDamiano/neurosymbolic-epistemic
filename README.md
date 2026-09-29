@@ -50,6 +50,44 @@ Il contesto Ollama è impostato a 32768 token, con controlli conservativi per ev
 troncamenti. Snapshot, prompt, risposte e valutazioni sono conservati in
 `generated/belief_revision_full/<run_id>/`.
 
+## Benchmark di grounding e ritiro su query positive
+
+`subclass_grounding_benchmark.ipynb` implementa il primo protocollo a score fisso,
+separato dal notebook esplorativo. Usa 6 query positive di sottoclasse tratte da
+`owlapy_generated_qa.json`, due per profondità esplicita di prova 1, 2 e 3.
+Le query, le prove di riferimento e gli snapshot completi sono congelati e tracciabili
+in `benchmarks/subclass_grounding_v1/`. Le prove ammesse in questa prima versione
+sono insiemi di inclusioni esplicite fra classi nominate; tutto il resto di LUBM
+rimane nel contesto. HermiT verifica ogni snapshot prima dell'esecuzione.
+
+Ogni query produce due chiamate: ontologia originale e intera ontologia con un singolo
+assioma necessario rimosso, conservando la risposta originale nella cronologia.
+HermiT conferma `entailed` prima e `not_entailed` dopo. Il modello restituisce solo
+`answer` e `axioms`, con triple URI complete. L'evaluator verifica la presenza degli
+assiomi e l'entailment della query dal solo insieme citato, ammettendo prove alternative.
+
+Il **grounded score** è la quota di risposte originali corrette con supporto valido.
+Il **withdrawal score** è la quota di ritiri corretti. Il **paired grounded revision score**
+è la quota di coppie in cui entrambi i turni superano la verifica, sul totale dei 6 casi.
+Non si escludono dal denominatore le baseline sbagliate. Errori di formato contano
+come insuccessi; errori infrastrutturali rendono il run non confrontabile.
+
+Usare l'ambiente `requirements-belief-revision-full.txt` e il kernel `Python (epistemic pilot)`.
+Modificare `MODELS` nel notebook per confrontare modelli già installati con gli stessi casi.
+Il runner è utilizzabile anche da terminale:
+
+```powershell
+.\.venv\Scripts\python.exe subclass_grounding_benchmark.py run --model qwen2.5-coder:7b
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p test_subclass_grounding.py -v
+```
+
+I run sono salvati in `generated/subclass_grounding/<run_id>/`: `manifest.json`,
+`responses.jsonl`, `evaluation.json` e copia degli snapshot. `compare_runs` rifiuta
+confronti fra dataset, prompt, opzioni o evaluator diversi. Il builder rifiuta di
+sovrascrivere un dataset esistente; per un nuovo dataset usare una directory/versione nuova.
+Questo pilot non misura ancora il comportamento su modifiche irrilevanti o supporti
+alternativi sopravvissuti al ritiro, e non costituisce una graduatoria statistica.
+
 ## Valutare i risultati storici
 
 Dalla radice del repository, con Python 3.11 o successivo (ambiente sorgente: Python 3.14.4):
