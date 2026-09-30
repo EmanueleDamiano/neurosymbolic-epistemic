@@ -12,6 +12,7 @@ import os
 from pathlib import Path
 import platform
 import random
+import re
 import shutil
 import subprocess
 import time
@@ -398,7 +399,9 @@ def run_benchmark(model="qwen2.5-coder:7b", directory=DATASET, options=None):
     context_limits = [v for k, v in model_show.get("model_info", {}).items() if k.endswith(".context_length")]
     if context_limits and min(context_limits) < options["num_ctx"]:
         raise ValueError("Model context limit is below the fixed protocol window.")
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + uuid.uuid4().hex[:8]
+    # Keep model tags readable while avoiding invalid path characters on Windows.
+    model_slug = re.sub(r"[^A-Za-z0-9._-]+", "_", model).strip("._-")[:100] or "model"
+    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + model_slug + "_" + uuid.uuid4().hex[:8]
     out = ROOT / "generated" / "subclass_grounding" / run_id
     out.mkdir(parents=True, exist_ok=False)
     fingerprint = digest(json_bytes({"dataset": dataset_hash, "instructions": INSTRUCTIONS, "schema": SCHEMA,
