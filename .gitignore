@@ -6,4 +6,4 @@ __pycache__/
 .env
 .env.*
 hs_err_pid*.log
-generated/
+# generated/
