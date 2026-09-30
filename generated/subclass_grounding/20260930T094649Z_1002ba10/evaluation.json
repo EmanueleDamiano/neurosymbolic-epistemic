@@ -1,0 +1,2334 @@
+{
+  "summary": {
+    "n_pairs": 52,
+    "n_responses": 104,
+    "complete_for_comparison": true,
+    "infrastructure_or_context_errors": 0,
+    "format_errors": 0,
+    "pair_success_count": 3,
+    "paired_grounded_revision_score": 0.057692307692307696,
+    "original_grounded_score": 0.057692307692307696,
+    "withdrawal_score": 0.6153846153846154,
+    "original_answer_accuracy": 0.8461538461538461,
+    "correct_original_without_valid_support_count": 41,
+    "withdrawal_stale_citation_count": 0
+  },
+  "by_depth": {
+    "1": {
+      "n_pairs": 33,
+      "original_grounded_score": 0.09090909090909091,
+      "withdrawal_score": 0.8181818181818182,
+      "paired_grounded_revision_score": 0.09090909090909091
+    },
+    "2": {
+      "n_pairs": 15,
+      "original_grounded_score": 0.0,
+      "withdrawal_score": 0.2,
+      "paired_grounded_revision_score": 0.0
+    },
+    "3": {
+      "n_pairs": 4,
+      "original_grounded_score": 0.0,
+      "withdrawal_score": 0.5,
+      "paired_grounded_revision_score": 0.0
+    }
+  },
+  "pairs": [
+    {
+      "case_id": "subclass_01",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_02",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_03",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_04",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_05",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_06",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_07",
+      "depth": 1,
+      "original_success": true,
+      "withdrawal_success": true,
+      "pair_success": true
+    },
+    {
+      "case_id": "subclass_08",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_09",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_10",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_11",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_12",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_13",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_14",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_15",
+      "depth": 1,
+      "original_success": true,
+      "withdrawal_success": true,
+      "pair_success": true
+    },
+    {
+      "case_id": "subclass_16",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_17",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_18",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_19",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_20",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_21",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_22",
+      "depth": 1,
+      "original_success": true,
+      "withdrawal_success": true,
+      "pair_success": true
+    },
+    {
+      "case_id": "subclass_23",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_24",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_25",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_26",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_27",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_28",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_29",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_30",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_31",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_32",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_33",
+      "depth": 1,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_34",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_35",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_36",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_37",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_38",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_39",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_40",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_41",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_42",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_43",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_44",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_45",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_46",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_47",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_48",
+      "depth": 2,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_49",
+      "depth": 3,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_50",
+      "depth": 3,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_51",
+      "depth": 3,
+      "original_success": false,
+      "withdrawal_success": false,
+      "pair_success": false
+    },
+    {
+      "case_id": "subclass_52",
+      "depth": 3,
+      "original_success": false,
+      "withdrawal_success": true,
+      "pair_success": false
+    }
+  ],
+  "responses": [
+    {
+      "case_id": "subclass_01",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_01",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_02",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_02",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_03",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_03",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_04",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_04",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_05",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Book"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_05",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_06",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_06",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_07",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": true,
+      "support_minimal": true,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_07",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_08",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#College"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_08",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#College"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_09",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ConferencePaper"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_09",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_10",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_10",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_11",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_11",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_12",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_12",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_13",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_13",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_14",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_14",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_15",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": true,
+      "support_minimal": true,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_15",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_16",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_16",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_17",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Institute"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_17",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_18",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#JournalArticle"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_18",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_19",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_19",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_20",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Manual"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_20",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_21",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_21",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_22",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": true,
+      "support_minimal": true,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_22",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_23",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Program"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_23",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_24",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Research"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_24",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_25",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_25",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_26",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Software"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_26",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_27",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Specification"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_27",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Specification"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_28",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_28",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_29",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#TechnicalReport"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_29",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_30",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_30",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_31",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Organization",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#University"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_31",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_32",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#UnofficialPublication"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_32",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_33",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_33",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_34",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_34",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_35",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_35",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_36",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_36",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_37",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_37",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_38",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ConferencePaper"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_38",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Article",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#ConferencePaper"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_39",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_39",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_40",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_40",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_41",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Work",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateCourse"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_41",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_42",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#JournalArticle"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_42",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#JournalArticle"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_43",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_43",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_44",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_44",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_45",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_45",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_46",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_46",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_47",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#TechnicalReport"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_47",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_48",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_48",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_49",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_49",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_50",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_50",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_51",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_51",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": false,
+      "support_sufficient": false,
+      "support_minimal": false,
+      "stale_axioms": [],
+      "absent_axioms": [
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor"
+        },
+        {
+          "subject": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor",
+          "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "object": "http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor"
+        }
+      ],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_52",
+      "condition": "original",
+      "gold": "entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": false,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": false,
+      "error_kind": null
+    },
+    {
+      "case_id": "subclass_52",
+      "condition": "withdrawal",
+      "gold": "not_entailed",
+      "answer": "not_entailed",
+      "valid_output": true,
+      "answer_correct": true,
+      "citations_current": true,
+      "support_sufficient": null,
+      "support_minimal": null,
+      "stale_axioms": [],
+      "absent_axioms": [],
+      "success": true,
+      "error_kind": null
+    }
+  ]
+}
