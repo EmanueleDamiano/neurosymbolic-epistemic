@@ -1,0 +1,68 @@
+{
+  "version": "transitive_ontology_batch_v1",
+  "status": "failed",
+  "model": "qwen3.6:latest",
+  "generation_options": {
+    "temperature": 0.6,
+    "num_ctx": 32768,
+    "num_predict": 4096
+  },
+  "think": false,
+  "system_prompt": "Create a compact domain-specific OWL schema, using meaningful names for its domain. Use exactly four named classes and three object properties. Exactly one property must be explicitly transitive and it must be the returned target_property. Use only declarations, named subclass axioms, named domain/range axioms and labels. No individuals, disjointness, property hierarchies, inverses, property chains, equivalences, blank nodes or anonymous class expressions. Do not answer any query. Return only the JSON object required by the schema, with Turtle in generated_onto.",
+  "configs": [
+    {
+      "generator": "llm",
+      "domain": "food",
+      "seed": 20261001,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "school",
+      "seed": 20261002,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "animals",
+      "seed": 20261003,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "relatives",
+      "seed": 20261004,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "food",
+      "seed": 20261005,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    }
+  ],
+  "requested_n_ontologies": 5,
+  "items": [],
+  "created_at_utc": "2026-10-01T15:31:53.519702+00:00",
+  "error": "RuntimeError: Generation attempts exhausted: [{\"config_index\": 0, \"attempt\": 1, \"accepted\": false, \"error\": \"ValueError: Generated ontology contains unsupported blank-node axioms\"}, {\"config_index\": 0, \"attempt\": 2, \"accepted\": false, \"error\": \"ValueError: Generated ontology contains unsupported blank-node axioms\"}, {\"config_index\": 0, \"attempt\": 3, \"accepted\": false, \"error\": \"ValueError: Generated ontology contains unsupported blank-node axioms\"}]"
+}

@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/food/ontology> a owl:Ontology .
+
+<https://example.org/food/class/FoodItem> a owl:Class ;
+    rdfs:label "FoodItem" .
+
+<https://example.org/food/class/Dish> a owl:Class ;
+    rdfs:label "Dish" ;
+    rdfs:subClassOf <https://example.org/food/class/FoodItem> .
+
+<https://example.org/food/class/Ingredient> a owl:Class ;
+    rdfs:label "Ingredient" ;
+    rdfs:subClassOf <https://example.org/food/class/FoodItem> .
+
+<https://example.org/food/class/Recipe> a owl:Class ;
+    rdfs:label "Recipe" ;
+    rdfs:subClassOf <https://example.org/food/class/Dish> .
+
+<https://example.org/food/property/madeOf> a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:domain <https://example.org/food/class/FoodItem> ;
+    rdfs:range <https://example.org/food/class/Ingredient> ;
+    rdfs:label "madeOf" .
+
+<https://example.org/food/property/contains> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/food/class/Dish> ;
+    rdfs:range <https://example.org/food/class/FoodItem> ;
+    rdfs:label "contains" .
+
+<https://example.org/food/property/preparedFor> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/food/class/Recipe> ;
+    rdfs:range <https://example.org/food/class/Dish> ;
+    rdfs:label "preparedFor" .

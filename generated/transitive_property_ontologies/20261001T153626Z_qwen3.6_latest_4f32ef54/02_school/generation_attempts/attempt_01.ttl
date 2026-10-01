@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/school/ontology> a owl:Ontology ;
+    rdfs:label "School Domain Ontology" .
+
+<https://example.org/school/class/Teacher> a owl:Class ;
+    rdfs:label "Teacher" .
+
+<https://example.org/school/class/Student> a owl:Class ;
+    rdfs:label "Student" .
+
+<https://example.org/school/class/Course> a owl:Class ;
+    rdfs:label "Course" .
+
+<https://example.org/school/class/Department> a owl:Class ;
+    rdfs:label "Department" .
+
+<https://example.org/school/prop/teaches> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/school/class/Teacher> ;
+    rdfs:range <https://example.org/school/class/Course> ;
+    rdfs:label "teaches" .
+
+<https://example.org/school/prop/enrollsIn> a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:domain <https://example.org/school/class/Student> ;
+    rdfs:range <https://example.org/school/class/Course> ;
+    rdfs:label "enrollsIn" .
+
+<https://example.org/school/prop/offers> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/school/class/Department> ;
+    rdfs:range <https://example.org/school/class/Course> ;
+    rdfs:label "offers" .

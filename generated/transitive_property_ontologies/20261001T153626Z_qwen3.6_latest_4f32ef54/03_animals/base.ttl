@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/animals/ontology> a owl:Ontology .
+
+<https://example.org/animals/class/Mammal> a owl:Class ;
+    rdfs:label "Mammal" .
+
+<https://example.org/animals/class/Bird> a owl:Class ;
+    rdfs:label "Bird" .
+
+<https://example.org/animals/class/Carnivore> a owl:Class ;
+    rdfs:label "Carnivore" .
+
+<https://example.org/animals/class/Omnivore> a owl:Class ;
+    rdfs:label "Omnivore" .
+
+<https://example.org/animals/class/Mammal> rdfs:subClassOf <https://example.org/animals/class/Carnivore> .
+
+<https://example.org/animals/class/Bird> rdfs:subClassOf <https://example.org/animals/class/Omnivore> .
+
+<https://example.org/animals/property/eats> a owl:ObjectProperty ;
+    rdfs:label "eats" ;
+    rdfs:domain <https://example.org/animals/class/Mammal> ;
+    rdfs:range <https://example.org/animals/class/Omnivore> .
+
+<https://example.org/animals/property/hunts> a owl:ObjectProperty ,
+        owl:TransitiveProperty ;
+    rdfs:label "hunts" ;
+    rdfs:domain <https://example.org/animals/class/Carnivore> ;
+    rdfs:range <https://example.org/animals/class/Mammal> .
+
+<https://example.org/animals/property/nests_near> a owl:ObjectProperty ;
+    rdfs:label "nests near" ;
+    rdfs:domain <https://example.org/animals/class/Bird> ;
+    rdfs:range <https://example.org/animals/class/Mammal> .

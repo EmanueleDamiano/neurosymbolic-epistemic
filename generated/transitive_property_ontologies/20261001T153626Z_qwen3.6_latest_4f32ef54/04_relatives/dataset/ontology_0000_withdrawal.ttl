@@ -1,0 +1,100 @@
+@prefix ns1: <https://example.org/relatives/property/> .
+@prefix ns2: <https://example.org/case/7760f6fc-12fb-59cf-117b-44172645261b#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns2:d0_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d0_b .
+
+ns2:d1_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d1_b .
+
+ns2:d2_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d2_b .
+
+ns2:d3_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d3_b .
+
+ns2:d4_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d4_b .
+
+ns2:d5_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d5_b .
+
+ns2:d6_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d6_b .
+
+ns2:d7_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d7_b .
+
+ns2:d8_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d8_b .
+
+ns2:d9_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d9_b .
+
+ns2:otherProperty a owl:ObjectProperty .
+
+ns2:q0_n0 a owl:NamedIndividual ;
+    ns1:isParentOf ns2:q0_n1 .
+
+<https://example.org/relatives/ontology> a owl:Ontology .
+
+ns1:isFatherOf a owl:ObjectProperty ;
+    rdfs:label "isFatherOf" ;
+    rdfs:domain <https://example.org/relatives/class/Father> ;
+    rdfs:range <https://example.org/relatives/class/Child> .
+
+ns1:isMotherOf a owl:ObjectProperty ;
+    rdfs:label "isMotherOf" ;
+    rdfs:domain <https://example.org/relatives/class/Mother> ;
+    rdfs:range <https://example.org/relatives/class/Child> .
+
+ns1:isParentOf a owl:ObjectProperty ;
+    rdfs:label "isParentOf" ;
+    rdfs:domain <https://example.org/relatives/class/Person> ;
+    rdfs:range <https://example.org/relatives/class/Person> .
+
+ns2:d0_b a owl:NamedIndividual .
+
+ns2:d1_b a owl:NamedIndividual .
+
+ns2:d2_b a owl:NamedIndividual .
+
+ns2:d3_b a owl:NamedIndividual .
+
+ns2:d4_b a owl:NamedIndividual .
+
+ns2:d5_b a owl:NamedIndividual .
+
+ns2:d6_b a owl:NamedIndividual .
+
+ns2:d7_b a owl:NamedIndividual .
+
+ns2:d8_b a owl:NamedIndividual .
+
+ns2:d9_b a owl:NamedIndividual .
+
+ns2:q0_n1 a owl:NamedIndividual ;
+    ns1:isParentOf ns2:q0_n2 .
+
+ns2:q0_n2 a owl:NamedIndividual ;
+    ns1:isParentOf ns2:q0_n3 .
+
+ns2:q0_n3 a owl:NamedIndividual .
+
+<https://example.org/relatives/class/Father> a owl:Class ;
+    rdfs:label "Father" ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> .
+
+<https://example.org/relatives/class/Mother> a owl:Class ;
+    rdfs:label "Mother" ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> .
+
+<https://example.org/relatives/class/Child> a owl:Class ;
+    rdfs:label "Child" ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> .
+
+<https://example.org/relatives/class/Person> a owl:Class ;
+    rdfs:label "Person" .
+

@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/relatives/ontology> a owl:Ontology .
+
+<https://example.org/relatives/class/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<https://example.org/relatives/class/Mother> a owl:Class ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> ;
+    rdfs:label "Mother" .
+
+<https://example.org/relatives/class/Father> a owl:Class ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> ;
+    rdfs:label "Father" .
+
+<https://example.org/relatives/class/Child> a owl:Class ;
+    rdfs:subClassOf <https://example.org/relatives/class/Person> ;
+    rdfs:label "Child" .
+
+<https://example.org/relatives/property/isParentOf> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/relatives/class/Person> ;
+    rdfs:range <https://example.org/relatives/class/Person> ;
+    rdf:type owl:TransitiveProperty ;
+    rdfs:label "isParentOf" .
+
+<https://example.org/relatives/property/isMotherOf> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/relatives/class/Mother> ;
+    rdfs:range <https://example.org/relatives/class/Child> ;
+    rdfs:label "isMotherOf" .
+
+<https://example.org/relatives/property/isFatherOf> a owl:ObjectProperty ;
+    rdfs:domain <https://example.org/relatives/class/Father> ;
+    rdfs:range <https://example.org/relatives/class/Child> ;
+    rdfs:label "isFatherOf" .

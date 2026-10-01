@@ -1,0 +1,100 @@
+@prefix ns1: <https://example.org/case/96ee6fa8-2344-c584-1fec-8ea817dafcfc#> .
+@prefix ns2: <https://example.org/food/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:d0_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d0_b .
+
+ns1:d1_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d1_b .
+
+ns1:d2_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d2_b .
+
+ns1:d3_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d3_b .
+
+ns1:d4_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d4_b .
+
+ns1:d5_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d5_b .
+
+ns1:d6_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d6_b .
+
+ns1:d7_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d7_b .
+
+ns1:d8_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d8_b .
+
+ns1:d9_a a owl:NamedIndividual ;
+    ns1:otherProperty ns1:d9_b .
+
+ns1:otherProperty a owl:ObjectProperty .
+
+ns1:q0_n0 a owl:NamedIndividual ;
+    ns2:madeOf ns1:q0_n1 .
+
+<https://example.org/food/ontology> a owl:Ontology .
+
+ns2:contains a owl:ObjectProperty ;
+    rdfs:label "contains" ;
+    rdfs:domain <https://example.org/food/class/Dish> ;
+    rdfs:range <https://example.org/food/class/FoodItem> .
+
+ns2:madeOf a owl:ObjectProperty ;
+    rdfs:label "madeOf" ;
+    rdfs:domain <https://example.org/food/class/FoodItem> ;
+    rdfs:range <https://example.org/food/class/Ingredient> .
+
+ns2:preparedFor a owl:ObjectProperty ;
+    rdfs:label "preparedFor" ;
+    rdfs:domain <https://example.org/food/class/Recipe> ;
+    rdfs:range <https://example.org/food/class/Dish> .
+
+ns1:d0_b a owl:NamedIndividual .
+
+ns1:d1_b a owl:NamedIndividual .
+
+ns1:d2_b a owl:NamedIndividual .
+
+ns1:d3_b a owl:NamedIndividual .
+
+ns1:d4_b a owl:NamedIndividual .
+
+ns1:d5_b a owl:NamedIndividual .
+
+ns1:d6_b a owl:NamedIndividual .
+
+ns1:d7_b a owl:NamedIndividual .
+
+ns1:d8_b a owl:NamedIndividual .
+
+ns1:d9_b a owl:NamedIndividual .
+
+ns1:q0_n1 a owl:NamedIndividual ;
+    ns2:madeOf ns1:q0_n2 .
+
+ns1:q0_n2 a owl:NamedIndividual ;
+    ns2:madeOf ns1:q0_n3 .
+
+ns1:q0_n3 a owl:NamedIndividual .
+
+<https://example.org/food/class/Ingredient> a owl:Class ;
+    rdfs:label "Ingredient" ;
+    rdfs:subClassOf <https://example.org/food/class/FoodItem> .
+
+<https://example.org/food/class/Recipe> a owl:Class ;
+    rdfs:label "Recipe" ;
+    rdfs:subClassOf <https://example.org/food/class/Dish> .
+
+<https://example.org/food/class/Dish> a owl:Class ;
+    rdfs:label "Dish" ;
+    rdfs:subClassOf <https://example.org/food/class/FoodItem> .
+
+<https://example.org/food/class/FoodItem> a owl:Class ;
+    rdfs:label "FoodItem" .
+

@@ -1,0 +1,174 @@
+{
+  "version": "transitive_ontology_batch_v1",
+  "status": "complete",
+  "model": "qwen3.6:latest",
+  "generation_options": {
+    "temperature": 0.6,
+    "num_ctx": 32768,
+    "num_predict": 4096
+  },
+  "think": false,
+  "system_prompt": "Create a compact domain-specific OWL schema, using meaningful names for its domain. Use exactly four named classes and three object properties. Exactly one property must be explicitly transitive and it must be the returned target_property. Use only declarations, named subclass axioms, named domain/range axioms and labels. Use a named ontology header, for example <https://example.org/domain/ontology> a owl:Ontology. Never use [], (), _: identifiers, owl:Restriction or OWL lists anywhere in the Turtle. Every subject must be a named IRI. No individuals, disjointness, property hierarchies, inverses, property chains, equivalences, blank nodes or anonymous class expressions. Do not answer any query. Return only the JSON object required by the schema, with Turtle in generated_onto.",
+  "configs": [
+    {
+      "generator": "llm",
+      "domain": "food",
+      "seed": 20261001,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "school",
+      "seed": 20261002,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "animals",
+      "seed": 20261003,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "relatives",
+      "seed": 20261004,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    },
+    {
+      "generator": "llm",
+      "domain": "food",
+      "seed": 20261005,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_queries": 1,
+      "max_generation_attempts": 3,
+      "direct_assertion_control": false
+    }
+  ],
+  "requested_n_ontologies": 5,
+  "items": [
+    {
+      "index": 1,
+      "domain": "food",
+      "seed": 20261001,
+      "directory": "01_food",
+      "dataset_directory": "01_food/dataset",
+      "ontology_id": "840b30cf101a4c8a260245cd3b8ec0743ee606bf9107131e77d68981824215d8",
+      "n_queries": 1,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_original_triples": 62,
+      "model_digest": "07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522",
+      "verification": {
+        "consistent_original": true,
+        "consistent_withdrawal": true,
+        "original_entailed": true,
+        "withdrawal_entailed": false,
+        "reference_support_verified": true,
+        "exact_withdrawal_verified": true
+      }
+    },
+    {
+      "index": 2,
+      "domain": "school",
+      "seed": 20261002,
+      "directory": "02_school",
+      "dataset_directory": "02_school/dataset",
+      "ontology_id": "265f2b14d4fd6b15fde95eda5edfa190d8390f14ca3336807083f8b5374ffa1c",
+      "n_queries": 1,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_original_triples": 61,
+      "model_digest": "07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522",
+      "verification": {
+        "consistent_original": true,
+        "consistent_withdrawal": true,
+        "original_entailed": true,
+        "withdrawal_entailed": false,
+        "reference_support_verified": true,
+        "exact_withdrawal_verified": true
+      }
+    },
+    {
+      "index": 3,
+      "domain": "animals",
+      "seed": 20261003,
+      "directory": "03_animals",
+      "dataset_directory": "03_animals/dataset",
+      "ontology_id": "60690fe144f84a21f03e81fdddd9a23b4bf213cabc48751c744b92d2ed7568b8",
+      "n_queries": 1,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_original_triples": 62,
+      "model_digest": "07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522",
+      "verification": {
+        "consistent_original": true,
+        "consistent_withdrawal": true,
+        "original_entailed": true,
+        "withdrawal_entailed": false,
+        "reference_support_verified": true,
+        "exact_withdrawal_verified": true
+      }
+    },
+    {
+      "index": 4,
+      "domain": "relatives",
+      "seed": 20261004,
+      "directory": "04_relatives",
+      "dataset_directory": "04_relatives/dataset",
+      "ontology_id": "b0c47ba54fa497f966353946be5fa5d740e80d4ccbf2d96a50892f88fd4a9076",
+      "n_queries": 1,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_original_triples": 63,
+      "model_digest": "07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522",
+      "verification": {
+        "consistent_original": true,
+        "consistent_withdrawal": true,
+        "original_entailed": true,
+        "withdrawal_entailed": false,
+        "reference_support_verified": true,
+        "exact_withdrawal_verified": true
+      }
+    },
+    {
+      "index": 5,
+      "domain": "food",
+      "seed": 20261005,
+      "directory": "05_food",
+      "dataset_directory": "05_food/dataset",
+      "ontology_id": "2149b4800cdf4bb867a58eada054477aad7855eae30a07f7945ac89917ce0834",
+      "n_queries": 1,
+      "path_length": 3,
+      "n_distractor_triples": 10,
+      "n_original_triples": 63,
+      "model_digest": "07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522",
+      "verification": {
+        "consistent_original": true,
+        "consistent_withdrawal": true,
+        "original_entailed": true,
+        "withdrawal_entailed": false,
+        "reference_support_verified": true,
+        "exact_withdrawal_verified": true
+      }
+    }
+  ],
+  "created_at_utc": "2026-10-01T15:36:26.074216+00:00",
+  "completed_at_utc": "2026-10-01T15:38:08.356130+00:00"
+}

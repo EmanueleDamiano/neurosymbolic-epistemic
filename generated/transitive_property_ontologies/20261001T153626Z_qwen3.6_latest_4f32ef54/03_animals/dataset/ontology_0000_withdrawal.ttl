@@ -1,0 +1,99 @@
+@prefix ns1: <https://example.org/animals/property/> .
+@prefix ns2: <https://example.org/case/84c33487-8b55-e83e-6668-bab642bd270a#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/animals/ontology> a owl:Ontology .
+
+ns1:eats a owl:ObjectProperty ;
+    rdfs:label "eats" ;
+    rdfs:domain <https://example.org/animals/class/Mammal> ;
+    rdfs:range <https://example.org/animals/class/Omnivore> .
+
+ns1:hunts a owl:ObjectProperty ;
+    rdfs:label "hunts" ;
+    rdfs:domain <https://example.org/animals/class/Carnivore> ;
+    rdfs:range <https://example.org/animals/class/Mammal> .
+
+ns1:nests_near a owl:ObjectProperty ;
+    rdfs:label "nests near" ;
+    rdfs:domain <https://example.org/animals/class/Bird> ;
+    rdfs:range <https://example.org/animals/class/Mammal> .
+
+ns2:d0_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d0_b .
+
+ns2:d1_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d1_b .
+
+ns2:d2_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d2_b .
+
+ns2:d3_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d3_b .
+
+ns2:d4_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d4_b .
+
+ns2:d5_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d5_b .
+
+ns2:d6_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d6_b .
+
+ns2:d7_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d7_b .
+
+ns2:d8_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d8_b .
+
+ns2:d9_a a owl:NamedIndividual ;
+    ns2:otherProperty ns2:d9_b .
+
+ns2:otherProperty a owl:ObjectProperty .
+
+ns2:q0_n0 a owl:NamedIndividual ;
+    ns1:hunts ns2:q0_n1 .
+
+<https://example.org/animals/class/Bird> a owl:Class ;
+    rdfs:label "Bird" ;
+    rdfs:subClassOf <https://example.org/animals/class/Omnivore> .
+
+ns2:d0_b a owl:NamedIndividual .
+
+ns2:d1_b a owl:NamedIndividual .
+
+ns2:d2_b a owl:NamedIndividual .
+
+ns2:d3_b a owl:NamedIndividual .
+
+ns2:d4_b a owl:NamedIndividual .
+
+ns2:d5_b a owl:NamedIndividual .
+
+ns2:d6_b a owl:NamedIndividual .
+
+ns2:d7_b a owl:NamedIndividual .
+
+ns2:d8_b a owl:NamedIndividual .
+
+ns2:d9_b a owl:NamedIndividual .
+
+ns2:q0_n1 a owl:NamedIndividual ;
+    ns1:hunts ns2:q0_n2 .
+
+ns2:q0_n2 a owl:NamedIndividual ;
+    ns1:hunts ns2:q0_n3 .
+
+ns2:q0_n3 a owl:NamedIndividual .
+
+<https://example.org/animals/class/Carnivore> a owl:Class ;
+    rdfs:label "Carnivore" .
+
+<https://example.org/animals/class/Omnivore> a owl:Class ;
+    rdfs:label "Omnivore" .
+
+<https://example.org/animals/class/Mammal> a owl:Class ;
+    rdfs:label "Mammal" ;
+    rdfs:subClassOf <https://example.org/animals/class/Carnivore> .
+
