@@ -198,6 +198,8 @@ def make_ollama_generator(model, *, options=None, host=None, timeout_s=600, tran
         if limits and min(limits) < actual_options["num_ctx"]:
             raise ValueError("Generator model capacity is below the requested window")
         version = request("/api/version")
+        print("LLM generator inputs:", flush=True)
+        print(json.dumps(payload, indent=2, ensure_ascii=False), flush=True)
         start = time.perf_counter()
         response = request("/api/chat", payload)
         elapsed_s = round(time.perf_counter() - start, 3)
