@@ -1,0 +1,1 @@
+# pip install owlapy[agentic]  # or: pip install owlapy[all]
